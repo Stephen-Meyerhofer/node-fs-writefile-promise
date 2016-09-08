@@ -1,0 +1,56 @@
+{
+  "name": "node-fs-writefile-promise",
+  "version": "1.0.0",
+  "description": "fs.writeFile wrapped in an ES6 Promise",
+  "license": "MIT",
+  "repository": "Stephen-Meyerhofer/node-fs-writefile-promise",
+  "author": {
+    "name": "Stephen Meyerhofer",
+    "email": "stephen@millennialcomputing.com",
+    "url": "github.com/Stephen-Meyerhofer"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "pretest": "eslint --fix index.js test.js",
+    "test": "node --strong_mode test.js",
+    "coverage": "node --strong_mode node_modules/.bin/istanbul cover test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "es6",
+    "fs",
+    "node-fs",
+    "write",
+    "file",
+    "writefile",
+    "write-file",
+    "promise",
+    "promises",
+    "then",
+    "thenable",
+    "catch",
+    "resolve",
+    "fulfill",
+    "fulfilled",
+    "reject",
+    "async",
+    "asynchronous",
+    "on"
+  ],
+  "bugs": {
+    "url": "https://github.com/Stephen-Meyerhofer/node-fs-writefile-promise/issues"
+  },
+  "homepage": "https://github.com/Stephen-Meyerhofer/node-fs-writefile-promise#readme",
+  "dependencies": {
+    "graceful-fs": "^4.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "istanbul": "^0.4.5",
+    "tape": "^4.6.0"
+  }
+}

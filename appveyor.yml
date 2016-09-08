@@ -1,0 +1,9 @@
+shallow_clone: true
+version: '{build}'
+skip_tags: true
+install:
+  - ps: Install-Product node 6
+  - npm install --production
+build: off
+test_script: node --strong_mode test.js
+cache: node_modules

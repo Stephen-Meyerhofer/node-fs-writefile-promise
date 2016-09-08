@@ -1,0 +1,9 @@
+sudo: false
+git:
+  depth: 1
+language: node_js
+node_js: node
+script: npm run pretest && npm run coverage
+after_script:
+  - npm install istanbul-coveralls
+  - node node_modules/.bin/istanbul-coveralls
