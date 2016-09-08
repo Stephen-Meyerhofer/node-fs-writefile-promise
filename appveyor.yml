@@ -3,7 +3,8 @@ version: '{build}'
 skip_tags: true
 install:
   - ps: Install-Product node 6
-  - npm install --production
+  - npm uninstall --save-dev eslint istanbul
+  - npm install
 build: off
 test_script: node test.js
 cache: node_modules
