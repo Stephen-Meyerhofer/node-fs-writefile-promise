@@ -14,8 +14,8 @@
   },
   "scripts": {
     "pretest": "eslint --fix index.js test.js",
-    "test": "node --strong_mode test.js",
-    "coverage": "node --strong_mode node_modules/.bin/istanbul cover test.js"
+    "test": "node test.js",
+    "coverage": "node node_modules/.bin/istanbul cover test.js"
   },
   "files": [
     "index.js"
